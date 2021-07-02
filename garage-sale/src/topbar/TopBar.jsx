@@ -1,4 +1,5 @@
-import "./topbar.css"
+import "./topbar.css";
+import profile from "./profile.png";
 
 import React from 'react'
 
@@ -32,7 +33,7 @@ export default function TopBar() {
             <div className="topRight">
                 <img 
                 className="topImg"
-                src="https://www.pexels.com/photo/man-with-cigarette-in-mouth-1933873/"
+                src={profile}
                 alt=""
                 />
                 <i className="topSearchIcon fas fa-search"></i>
