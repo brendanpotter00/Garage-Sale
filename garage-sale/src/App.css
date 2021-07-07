@@ -1,5 +1,10 @@
+:root {
+    --bg: #2a2929;
+}
+
+
 .page1{
     
-    background-color: rgb(39, 39, 39);
+    background: linear-gradient(.25turn,#3a3a3a, 70%,var(--bg));
     
 }
