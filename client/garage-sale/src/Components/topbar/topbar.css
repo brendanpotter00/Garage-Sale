@@ -15,6 +15,7 @@
     align-items: center;
     font-family: 'Roboto Slab', serif;
     z-index: 99;
+    
 }
 
 .topLeft,.topRight { 
@@ -22,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .topIcon { 
     font-size:20px;

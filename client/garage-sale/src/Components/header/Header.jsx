@@ -10,7 +10,12 @@ export default function Header() {
                 <span className="headerTitleSm">Phi Sigma Chi</span>
                 <span className="headerTitleLg">Garage</span>
             </div>
+            
+           
+
             <img className="headerImg" src={headerImg1} alt="" />
+            
+            
         </div>
     )
 }

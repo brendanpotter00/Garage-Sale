@@ -1,8 +1,14 @@
-import React from 'react';
+
 import "./singlePost.css";
 import police from "../../imgs/police.png";
+import axios from "axios";
+import { useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
+
 
 function SinglePost() {
+   
     return (
         <div className="singlePost">
             <div className="singlePostWrapper">

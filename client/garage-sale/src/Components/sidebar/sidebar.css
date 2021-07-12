@@ -14,17 +14,21 @@
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+    
   }
   .sidebarCard { 
       background-color: rgb(63, 63, 63);
       box-shadow: 5px 5px 5px rgb(27, 27, 27);
       border-radius: 20px;
       
+      
   }
   .sidebarItem {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+    
   }
 
   .sidebarTitle {
@@ -41,6 +45,7 @@
     line-height: 19px;
     color: rgb(24, 24, 24);
     font-weight: 600;
+    
   }
   
   .sidebarItem > img {
@@ -50,30 +55,34 @@
     height: 250px;
     border-radius: 20px;
     
+    
   }
   
   .sidebarItem > p {
-    padding: 30px;
+    padding: 1.5em 0px;
     color: rgb(27, 27, 27);
+ 
   }
   
   .sidebarList {
     list-style-type: none;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
+   
   }
   
   .sidebarListItem {
     display: inline-block;
     width: 50%;
-    margin-top: 15px;
+    margin-top: .9em;
     cursor: pointer;
     color:rgb(31, 31, 31);
+    
   }
   
   .sidebarSocial {
     
     margin-top: 15px;
-    width: 250px;
+    width: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,5 +94,6 @@
     margin-left: 10px;
     color:rgb(121, 121, 121);
     cursor: pointer;
+  
   }
   

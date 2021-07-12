@@ -20,8 +20,7 @@ export default function Sidebar() {
                 </div>
                 <ul className="sidebarList"> 
                     <li className="sidebarListItem"> All </li>
-                    <li className="sidebarListItem"> Bedroom </li>
-                    <li className="sidebarListItem"> Desk </li>
+                    <li className="sidebarListItem"> Bedroom </li> 
                     <li className="sidebarListItem"> Kitchen </li>
                     <li className="sidebarListItem"> Outside </li>
                     <li className="sidebarListItem"> Tech </li>

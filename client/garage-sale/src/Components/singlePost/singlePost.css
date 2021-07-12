@@ -10,6 +10,7 @@
 
 .singlePost {
     flex: 9;
+    padding-bottom: 50px;
 }
 .singlePostWrapper {
     padding: 20px;
