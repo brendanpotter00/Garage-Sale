@@ -1,8 +1,15 @@
-import React from 'react';
+import { useContext, useState } from "react";
 import "./write.css";
-import Sidebar from "../../Components/sidebar/Sidebar";
+import axios from "axios";
+import { Context } from "../../context/Context"
 
 function Write() {
+    
+    const [title, setTitle] = useState("");
+    const [desc, setDesc] = useState("");
+    const [file, setFile] = useState(null);
+    const { user } = useContext(Context);
+
     return (
         <div className="write">
             <img
