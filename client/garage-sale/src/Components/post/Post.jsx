@@ -6,6 +6,7 @@ import police from '../../imgs/police.png';
 import { Link } from "react-router-dom";
 
 
+
 function post({post}) {
     const PF = "http://localhost:5000/images/";
     return (

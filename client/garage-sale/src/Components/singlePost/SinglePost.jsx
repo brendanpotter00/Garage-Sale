@@ -8,13 +8,33 @@ import { Link } from "react-router-dom";
 
 
 function SinglePost() {
-   
+    const location = useLocation();
+    const path = location.pathname.split("/")[2];
+    const PF = "http://localhost:5000/images/";
+
+    const [post, setPost] = useState({});
+    const [title, setTitle] = useState("");
+    const [desc, setDesc] = useState("");
+
+    useEffect(() => {
+        const getPost = async () => {
+          const res = await axios.get("/posts/" + path);
+          setPost(res.data);
+          setTitle(res.data.title);
+          setDesc(res.data.desc);
+        };
+        getPost();
+      }, [path]);
+
     return (
         <div className="singlePost">
             <div className="singlePostWrapper">
-                <img className="singlePostImg" src={police} alt="" />
+                {post.photo && (
+                <img src={PF + post.photo} alt="" className="singlePostImg" />
+                )}
+                
                 <h1 className="singlePostTitle">
-                    Post title
+                    {post.title}
                     <div className="singlePostEdit">
                         <i className="singlePostIcon fas fa-edit"></i>
                         <i className="singlePostIcon fas fa-trash-alt"></i>
@@ -23,24 +43,16 @@ function SinglePost() {
                 <div className="singlePostInfo">
                     <span className="singlePostAuthor">
                         Author: 
-                        <b>
-                             Brendan
-                        </b>
+                        
+                        <Link to={`/?user=${post.username}`} className="link">
+                            <b> {post.username}</b>
+                        </Link>
+                        
                     </span>
-                    <span>1 day ago</span>
+                    <span>{new Date(post.createdAt).toDateString()}</span>
                 </div>
                     <p className="singlePostDesc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                        quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-                        sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-                        recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-                        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+                        {post.desc}
                     </p>
                 </div>
             </div>
