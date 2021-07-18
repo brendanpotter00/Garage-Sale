@@ -101,7 +101,7 @@ function SinglePost() {
                 )}
                 {updateMode && (
                     <button className="singlePostButton" onClick={handleUpdate}>
-                        Update and kill
+                        Update
                     </button>
                 )}
                 </div>
