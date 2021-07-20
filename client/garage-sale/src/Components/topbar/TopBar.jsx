@@ -17,9 +17,18 @@ export default function TopBar() {
     return (
         <div className="top">
             <div className="topLeft">
-                <i className="topIcon fab fa-facebook-square"></i>
-                <i className="topIcon fab fa-instagram"></i>
-                <i className="topIcon fas fa-globe"></i>
+                
+                <a href="https://www.instagram.com/phisigmachi/"> 
+                    <i className="topIcon fab fa-facebook-square"/> 
+                </a>
+                <a href="https://www.instagram.com/phisigmachi/"> 
+                    <i className="topIcon fab fa-instagram"/> 
+                </a>
+                <a href="https://phisigschi.wixsite.com/home"> 
+                    <i className="topIcon fas fa-globe"/> 
+                </a>
+                
+
             </div>
             <div className="topCenter">
                 <ul className="topList">
@@ -72,7 +81,7 @@ export default function TopBar() {
                     </li>
                 </ul>
                 )}
-                <i className="topSearchIcon fas fa-search"></i>
+                {/* <i className="topSearchIcon fas fa-search"></i> */}
             </div>
         </div>
     )

@@ -10,7 +10,7 @@
 
 .singlePost {
     flex: 9;
-    padding-bottom: 50px;
+    padding-bottom: 40em;
 }
 .singlePostWrapper {
     padding: 20px;
@@ -20,23 +20,26 @@
 }
 
 .singlePostImg {
-    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 85%;
     height: 40vw;
-    border-radius: 5px;
+    border-radius: 20px;
     object-fit: cover;
 }
 .singlePostTitle {
     text-align: center;
     color: white;
-    margin: 10px;
-    font-size: 28px;
+    margin: 1em;
+   
+    font-size: calc(25px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Roboto Slab', serif;
 }
 
 .singlePostTitleInput {
-  margin: 10px;
+  margin: 1em;
   font-family: "Lora", serif;
-  font-size: 28px;
+  font-size: calc(25px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   border: none;
   color: gray;
@@ -51,10 +54,12 @@
   .singlePostEdit {
     float: right;
     font-size: 16px;
+    margin-top: 3em;
+    
   }
   
   .singlePostIcon {
-    margin-left: 10px;
+    margin-left: 1em;
     cursor: pointer;
   }
   
@@ -66,7 +71,9 @@
   }
   
   .singlePostInfo {
-    margin-bottom: 20px;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -75,7 +82,7 @@
   }
   
   .singlePostAuthor{
-    margin-left: 5px;
+    
   }
   
   .singlePostDesc {
@@ -85,7 +92,7 @@
   }
   
   .singlePostDesc::first-letter {
-    margin-left: 20px;
+    margin-left: 1em;
     font-size: 30px;
     font-weight: 600;
   }
@@ -98,7 +105,8 @@
     border-radius: 5px;
     cursor: pointer;
     align-self: flex-end;
-    margin-top: 20px;
+    margin: 1em;
+    margin-right: 2em;
   }
   .singlePostButton:hover {
     background-color: rgb(48, 148, 73);
@@ -109,6 +117,7 @@
     font-size: 18px;
     line-height: 25px;
     background-color: inherit;
+    margin: 2em;
   }
   
   .singlePostDescInput:focus {

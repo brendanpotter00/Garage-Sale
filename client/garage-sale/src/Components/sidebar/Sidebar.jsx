@@ -14,7 +14,7 @@ export default function Sidebar() {
         };
         getCats();
     }, []);
-    
+
     return (
         <div className="sidebar">
             
@@ -26,7 +26,7 @@ export default function Sidebar() {
                 <p> Fraternity At Trinity University</p>
             </div>
             
-            
+            {/* 
             <div className="sidebarItem">
                 <div className="sidebarCard">
                 <span className="sidebarTitle">Categories</span>
@@ -41,7 +41,7 @@ export default function Sidebar() {
                     
                 </ul>
             
-            </div>
+            </div> */}
             
             <div className="sidebarItem">
                 <div className="sidebarCard">

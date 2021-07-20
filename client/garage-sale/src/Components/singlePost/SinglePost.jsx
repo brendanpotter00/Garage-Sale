@@ -49,7 +49,7 @@ function SinglePost() {
           setUpdateMode(false)
         } catch (err) {}
     };
-
+    
     return (
         <div className="singlePost">
             <div className="singlePostWrapper">

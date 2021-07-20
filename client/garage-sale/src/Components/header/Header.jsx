@@ -8,12 +8,12 @@ export default function Header() {
         <div className="header">
             <div className="headerTitles">
                 <span className="headerTitleSm">Phi Sigma Chi</span>
-                <span className="headerTitleLg">Garage</span>
+                <span className="headerTitleLg">Garage Sale</span>
             </div>
             
            
 
-            <img className="headerImg" src={headerImg1} alt="" />
+            <img className="headerImg" src='https://images.pexels.com/photos/2972038/pexels-photo-2972038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt="" />
             
             
         </div>

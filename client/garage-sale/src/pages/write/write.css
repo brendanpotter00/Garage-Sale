@@ -8,12 +8,15 @@
     padding-top: 50px;
     padding-bottom: 200px;
     background: linear-gradient(.25turn,#3a3a3a, 70%,#2a2929);
+    display: flex;
+    flex-direction: column;
 }
   
   .writeImg {
     
-    margin-left: 150px;
-    width: 70vw;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 85%;
     height: 40vw;
     border-radius: 20px;
     object-fit: cover;
@@ -25,7 +28,8 @@
   }
   
   .writeFormGroup {
-    margin-left: 150px;
+    margin-left: 2em;
+    margin-right: 2em;
     display: flex;
     align-items: center;
   }
@@ -44,11 +48,12 @@
   }
   
   .writeInput {
-    font-size: 30px;
+    font-size: calc(25px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
     background-color:inherit;
     border: none;
     padding: 20px;
     width: 70vw;
+    color: rgb(158, 158, 158);
   }
   
   .writeInput::placeholder {
@@ -64,21 +69,25 @@
     width: 70vw;
     height: 100vh;
     font-family: inherit;
-    font-size: 20px;
+    font-size: calc(15px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
   
   .writeSubmit {
-    position: absolute;
-    top: 30px;
-    right: 50px;
+    position: relative;
+    top: 2em;
+    left: 2em;
+    right: 2em;
     color: white;
     background-color: var(--publish);
     padding: 10px;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: calc(15px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    
+    
+    
+
+    border: 1px solid red;
   }
   

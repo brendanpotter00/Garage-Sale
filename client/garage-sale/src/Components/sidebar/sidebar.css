@@ -15,21 +15,28 @@
     align-items: center;
     font-weight: bold;
     
+}
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    display: none;
   }
+}
+
+
   .sidebarCard { 
       background-color: rgb(63, 63, 63);
       box-shadow: 5px 5px 5px rgb(27, 27, 27);
       border-radius: 20px;
       
       
-  }
+}
   .sidebarItem {
     display: flex;
     flex-direction: column;
     align-items: center;
    
     
-  }
+}
 
   .sidebarTitle {
     margin: 10px;
@@ -46,7 +53,7 @@
     color: rgb(24, 24, 24);
     font-weight: 600;
     
-  }
+}
   
   .sidebarItem > img {
     box-shadow: 5px 5px 5px rgb(27, 27, 27);

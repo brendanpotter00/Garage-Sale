@@ -25,8 +25,9 @@
     justify-content: center;
     
 }
+
 .topIcon { 
-    font-size:20px;
+    font-size: calc(10px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
     margin-right: 10px;
     color:rgb(167, 165, 165);
     cursor: pointer;
@@ -36,8 +37,8 @@
 }
 
 .topImg {
-    width:40px;
-    height: 40px;
+    width: 5vh;
+    height: 5vh;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
@@ -52,8 +53,8 @@
 }
 
 .topListItem {
-    margin-right: 20px;
-    font-size: 22px;
+    margin-right: .3em;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
     cursor: pointer;
     font-weight:300;
 }
